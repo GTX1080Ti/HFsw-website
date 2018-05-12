@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>模板</title>
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+<link href="dist/canvi.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<script type="text/javascript" src="dist/canvi.js"></script>
+<style type="text/css">
+	body,html{
+		font-size: 62.5%;
+		margin: 0;
+	}
+  .logo{}
+  .Title{
+	  width: 100%;
+	  height: auto;
+	  font-size: 5.2rem; 
+	  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	}
+
+	.main-logo{
+		width: 210px;
+		height: 250px;
+		display: block;
+		margin:0 auto;
+		position: relative;
+		top:50px;	
+	}
+	.buttomstyle{
+		height:100px;
+		width:100px;
+		background:url(images/icon-1.png);
+		border:0;
+	}
+	.buttomstyle:hover{
+		height:100px;
+		width:100px;
+		background:url(images/icon-2.png);
+	}
+	.photo1{
+		box-shadow: 2px 2px 2px #888888;
+		width: 950px;
+		height:232px;
+		background: url(images/Photo/20155783639.jpg);
+		margin:50px auto 0 auto;
+	}
+	.photo2{
+		box-shadow: 2px 2px 2px #888888;
+		width: 950px;
+		height:232px;
+		background: url(images/Photo/2015569159.jpg);
+		margin:50px auto 0 auto;
+	}
+	.photo3{
+		box-shadow: 2px 2px 2px #888888;
+		width: 950px;
+		height:232px;
+		background: url(images/Photo/201556925.jpg);
+		margin:50px auto 0 auto;
+	}
+	.photo4{
+		box-shadow: 2px 2px 2px #888888;
+		width: 950px;
+		height:232px;
+		background: url(images/Photo/2015569213.jpg);
+		margin:50px auto 0 auto;
+	}
+	.photo5{
+		box-shadow: 2px 2px 2px #888888;
+		width: 950px;
+		height:232px;
+		background: url(images/Photo/2015569220.jpg);
+		margin:50px auto 0 auto;
+	}
+</style>
+</head>
+<body>
+  <center>
+    <div class="default-primary-color">
+	  	<div class="main-logo" >
+		 <img src="images/hfswlogo.png" />
+	 </div>
+   <main class="js-canvi-content canvi-content">
+		     <button class="js-canvi-open-button--left buttomstyle"></button>
+	 </main> 
+	  </div>
+	<div class="photo1"></div>
+	<div class="photo2"></div>
+	<div class="photo3"></div>
+	<div class="photo4"></div>
+	<div class="photo5"></div>
+    <hr style="height:1px;width:100%;border:none;border-top:1px dashed #888888;">
+    
+	  
+<!--侧展栏-->
+<aside class="myCanvasNav canvi-navbar">
+<div class="canvi-user-info">
+<div class="canvi-user-info__image">
+</div>
+<div class="canvi-user-info__data">
+    <span class="canvi-user-info__title">By:掉进雪里的无邪</span>
+        <a href="#" class="canvi-user-info__meta">Wuxie512@Gmail.com</a>
+      <div class="canvi-user-info__close" onClick="t.close();">            	
+        </div>
+    </div>
+    </div>
+<ul class="canvi-navigation">
+<li>
+<a href="index.html" class="canvi-navigation__item">
+<span class="canvi-navigation__icon-wrapper" style="background:url(images/index.png);">
+<span class="canvi-navigation__icon icon-iconmonstr-code-2"></span>
+</span>
+<span class="canvi-navigation__text">首页</span>
+</a>
+</li>
+<li>
+<a href="http://www.hfswxx.net" class="canvi-navigation__item">
+<span class="canvi-navigation__icon-wrapper" style="background:url(images/web.png);">
+<span class="canvi-navigation__icon icon-iconmonstr-code-5"></span>
+</span>
+<span class="canvi-navigation__text">学校原官网</span>
+</a>
+</li>
+<li>
+<a href="#" class="canvi-navigation__item">
+<span class="canvi-navigation__icon-wrapper" style="background:url(images/about.png);">
+<span class="canvi-navigation__icon icon-iconmonstr-code-9"></span>
+</span>
+<span class="canvi-navigation__text">关于</span>
+</a>
+</li>
+</ul>
+</aside>
+<div class="bottom"></div>
+
+<script>
+var t = new Canvi({
+		content: ".js-canvi-content",
+		isDebug: !1,
+		navbar: ".myCanvasNav",
+		openButton: ".js-canvi-open-button--left",
+		position: "left",
+		pushContent: !1,
+		speed: "0.2s",
+		width: "100px",
+		height: "100px",
+		responsiveWidths: [ {
+			breakpoint: "600px",
+			width: "280px"
+		}, {
+			breakpoint: "1280px",
+			width: "320px"
+		}, {
+			breakpoint: "1600px",
+			width: "380px"
+		} ]
+	})
+</script>
+  </center>
+</body>
+</html>

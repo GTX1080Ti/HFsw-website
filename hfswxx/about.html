@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>模板</title>
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+<link href="dist/canvi.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<script type="text/javascript" src="dist/canvi.js"></script>
+<style type="text/css">
+	body,html{
+		font-size: 62.5%;
+		margin: 0;
+	}
+  .logo{}
+  .Title{
+	  width: 100%;
+	  height: auto;
+	  font-size: 5.2rem; 
+	  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	}
+  .textbox{
+	  width:128px;
+	  height:150px;
+	  margin:25px auto;
+	  background-color:#FFFFFF;
+	  border-radius: 10px;
+	  }
+	.textbox-text{
+		font-size: 2.4rem;
+		width: 128px;
+		height: 50px;
+	}
+	.main-logo{
+		width: 210px;
+		height: 250px;
+		display: block;
+		margin:0 auto;
+		position: relative;
+		top:50px;	
+	}
+	.buttomstyle{
+		height:100px;
+		width:100px;
+		background:url(images/icon-1.png);
+		border:0;
+	}
+	.buttomstyle:hover{
+		height:100px;
+		width:100px;
+		background:url(images/icon-2.png);
+	}
+/*.logo{
+		width: 600px;
+		height: 600px;
+		margin: 5px auto;
+		border-radius: 300px;
+		background: url(images/wuxie.jpg);
+	}    */
+	.box{width: 600px;
+	height: 900px;
+	text-align: center;
+	margin: 50px auto 0 auto;}
+	
+</style>
+</head>
+<body>
+  <center>
+    <div class="default-primary-color">
+	  	<div class="main-logo" >
+		 <img src="images/hfswlogo.png" />
+	 </div>
+   <main class="js-canvi-content canvi-content">
+		     <button class="js-canvi-open-button--left buttomstyle"></button>
+	 </main> 
+	  </div>
+    
+	<div class="logo">
+    </div>
+	  <div class="box">
+	  <div class="textbox">
+		  <a href="https://github.com/GTX1080Ti">
+			  <img src="images/github.png" />
+	    <div class="textbox-text">Github</div>
+		  </a>
+	  </div>
+	  	  <div class="textbox">
+		  <a href="https://music.163.com/#/user/home?id=84046925">
+			  <img src="images/Cloudmusic.png" />
+	    <div class="textbox-text">网易云音乐</div>
+		  </a>
+	  </div>
+	  	  <div class="textbox">
+		  <a href="http://qm.qq.com/cgi-bin/qm/qr?k=dlNgCFaR5MXwH-VrMlU3US1b2I7AVAuU">
+			  <img src="images/QQ.png" />
+	    <div class="textbox-text">QQ</div>
+		  </a>
+	  </div>
+	  	  <div class="textbox">
+		  <a href="https://Wuxie512@Gmail.com">
+			  <img src="images/email.png" />
+	    <div class="textbox-text">我的邮箱</div>
+		  </a>
+			  <p>引用开源CANVI.JS</p>
+		  <p>图标素材来自阿里巴巴矢量图标库Iconfont</p>
+	  </div>
+		  
+		
+	  </div>
+    
+	  
+<!--侧展栏-->
+<aside class="myCanvasNav canvi-navbar">
+<div class="canvi-user-info">
+<div class="canvi-user-info__image">
+</div>
+<div class="canvi-user-info__data">
+    <span class="canvi-user-info__title">By:掉进雪里的无邪</span>
+        <a href="#" class="canvi-user-info__meta">Wuxie512@Gmail.com</a>
+      <div class="canvi-user-info__close" onClick="t.close();">            	
+        </div>
+    </div>
+    </div>
+<ul class="canvi-navigation">
+<li>
+<a href="index.html" class="canvi-navigation__item">
+<span class="canvi-navigation__icon-wrapper" style="background:url(images/index.png);">
+<span class="canvi-navigation__icon icon-iconmonstr-code-2"></span>
+</span>
+<span class="canvi-navigation__text">首页</span>
+</a>
+</li>
+<li>
+<a href="http://www.hfswxx.net" class="canvi-navigation__item">
+<span class="canvi-navigation__icon-wrapper" style="background:url(images/web.png);">
+<span class="canvi-navigation__icon icon-iconmonstr-code-5"></span>
+</span>
+<span class="canvi-navigation__text">学校原官网</span>
+</a>
+</li>
+<li>
+<a href="#" class="canvi-navigation__item">
+<span class="canvi-navigation__icon-wrapper" style="background:url(images/about.png);">
+<span class="canvi-navigation__icon icon-iconmonstr-code-9"></span>
+</span>
+<span class="canvi-navigation__text">关于</span>
+</a>
+</li>
+</ul>
+</aside>
+<div class="bottom"></div>
+
+<script>
+var t = new Canvi({
+		content: ".js-canvi-content",
+		isDebug: !1,
+		navbar: ".myCanvasNav",
+		openButton: ".js-canvi-open-button--left",
+		position: "left",
+		pushContent: !1,
+		speed: "0.2s",
+		width: "100px",
+		height: "100px",
+		responsiveWidths: [ {
+			breakpoint: "600px",
+			width: "280px"
+		}, {
+			breakpoint: "1280px",
+			width: "320px"
+		}, {
+			breakpoint: "1600px",
+			width: "380px"
+		} ]
+	})
+</script>
+  </center>
+</body>
+</html>
